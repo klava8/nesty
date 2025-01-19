@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+</head>
+<body>
+    <h1>sosi{{ user.username }}!</h1>
+    <a href="{% url 'reg' %}">registrations</a>
+    <a href="{% url 'login' %}">login</a>
+    <a href="{% url 'logout' %}">logout</a>
+    <hr>
+    <a href="{% url 'books' %}">list book</a>
+
+</body>
+</html>
