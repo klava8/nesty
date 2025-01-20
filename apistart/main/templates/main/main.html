@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Разработка API</title>
+</head>
+<body>
+    {% if user.is_authenticated %}
+        <h2>Здравствуйте, {{ user.username }}! </h2>
+        <a href="{% url 'main:logout' %}">Выйти</a>
+    {% else %}
+        <h2>Здравствуйте!</h2>
+        <a href="{% url 'main:reg' %}">Регистрация</a>
+        <a href="{% url 'main:login' %}">Войти</a>
+    {% endif %}
+</body>
+</html>
